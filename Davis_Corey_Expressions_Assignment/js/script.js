@@ -37,7 +37,7 @@ var yardArea=yardSide[0]*yardSide[1];
 var nonWaterArea=yardArea-sprayArea;  //Area of the yard minus area covered by sprinkler.
 
 //outputs
-console.log(" "+sprayArea +" feet is the spray area and the yard area is "+yardArea+ ".\n" +
+console.log(" "+sprayArea +" feet is the spray area and the yard area is "+yardArea+ " feet.\n" +
 "You will have "+nonWaterArea+" feet that will not be watered by this sprinkler.");
 
 /*Tested inputs 10 feet = Sprinkler length
