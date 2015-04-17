@@ -5,7 +5,7 @@
  */
 
 //Add alert to test my file
-alert("JavaScript is functional!");
+//alert("JavaScript is functional!");
 
 //variables
 var sprayLength;  //Variable Declaration
@@ -30,7 +30,15 @@ sprayArea*=3.14;  //PI * Length squared
 var yardSide=[yardLength,yardWidth];  //Array declaration for yard area calculation
 //Calculation of yard area length * width
 var yardArea=yardSide[0]*yardSide[1];
-
+//Calculation of area not reached by the sprinkler.
+var nonWaterArea=yardArea-sprayArea;
 
 //outputs
-console.log(sprayArea +" feet is the spray area and the yard area is "+yardArea);
+console.log(" "+sprayArea +" feet is the spray area and the yard area is "+yardArea+ ".\n" +
+"You will have "+nonWaterArea+" feet that will not be watered by this sprinkler.");
+
+/*Tested inputs 10 feet = Sprinkler length
+20 feet for the length
+20 feet for the width
+86 feet should be left over unwatered.
+*/
