@@ -12,8 +12,7 @@ var sprayLength;  //Variable Declaration
 var yardLength;  //Variable Declaration
 var yardWidth;  //Variable Declaration
 
-
-
+//Prompts
 //prompt for Sprinkler watered area
 sprayLength=Number(prompt("Calculation of non-watered lawn area." +
 " \nPlease enter the considered sprinkler spray length in feet."));
@@ -22,16 +21,17 @@ yardLength=Number(prompt("What is your yard length in feet."));
 //Width of yard prompt from user
 yardWidth=Number(prompt("What is your yard width in feet."));
 
+//Calculations
+var yardSide=[yardLength,yardWidth];  //Array declaration for yard area calculation
 
 //1st Area Calculation
 var sprayArea=sprayLength*sprayLength;  //Length squared and set to area
 sprayArea*=3.14;  //PI * Length squared
 
-var yardSide=[yardLength,yardWidth];  //Array declaration for yard area calculation
-
 //2nd Area Calculation
 // Calculation of yard area length * width
 var yardArea=yardSide[0]*yardSide[1];
+
 //3rd Calculation
 // Calculation of area not reached by the sprinkler.
 var nonWaterArea=yardArea-sprayArea;  //Area of the yard minus area covered by sprinkler.
