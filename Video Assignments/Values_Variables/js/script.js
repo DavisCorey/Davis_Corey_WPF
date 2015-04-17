@@ -15,4 +15,6 @@ var yearBorn = 1955;
 
 
 //outputs
-console.log(yearBorn);
+/*console.log(yearBorn);
+ */
+alert("Hello World!");
