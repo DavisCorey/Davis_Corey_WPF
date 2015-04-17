@@ -8,9 +8,11 @@
 alert("JavaScript is functional!");
 
 //variables
+var yearBorn = 1955;
 
 
 //prompts
 
 
 //outputs
+console.log(yearBorn);
