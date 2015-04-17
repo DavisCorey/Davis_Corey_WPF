@@ -8,9 +8,19 @@
 alert("JavaScript is functional!");
 
 //variables
+var sprayLength;  //Variable Declaration
+var yardLength;  //Variable Declaration
+var yardWidth;  //Variable Declaration
 
 
-//prompts
 
+//prompt for Sprinkler watered area
+sprayLength=Number(prompt("Calulation of unwatered lawn area." +
+" \nPlease enter the considered sprinkler spray length in feet."));
+
+//1st Area Calculation
+var sprayArea=sprayLength*sprayLength;  //Length squared and set to area
+sprayArea*=3.14;  //PI * Length squared
 
 //outputs
+console.log(sprayArea);
