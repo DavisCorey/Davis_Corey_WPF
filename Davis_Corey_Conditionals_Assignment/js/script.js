@@ -21,4 +21,20 @@ oldPhone=Number(prompt("Let's calculate how much it cost to upgrade to a new sma
 newPhone=Number(prompt("How much is the new smartphone's retail cost?"));
 paymentsMade=Number(prompt("Please input the total cost of payments made for the current smartphone."));
 
+//Validate User Prompts with Ternary
+oldPhone=(oldPhone=="")? Number(prompt("We left out some information \n Can you input the cost of your" +
+    " current smartphone.")):false;
+newPhone=(newPhone=="")? Number(prompt("We left out some information \n Can you input the cost of the new smartphone.")):false;
+paymentsMade=(paymentsMade=="")? Number(prompt("We left out some information \n Can you input the estimated total cost" +
+    " of payments made.")):false;
+
+//Calculations
+remainBal=oldPhone-paymentsMade;  //Calc of payments made taken from the old phone's value
+newCost=newPhone-paymentsMade;  //Calc of difference of new phone cost and payments made on old phone
+oldUpgrade=oldPhone/2;  //Calc of amount of old phone value of 50% to reach upgrade ability (TMobile used)
+upgradeEligible=oldUpgrade-paymentsMade;  //Calc of amount needed to reach 50% for upgrade possibility
+monthlyCost=newCost/24;  //Calc of new phones cost after upgrade over 24 months (TMobile used)
+
+//Conditionals
+
 
