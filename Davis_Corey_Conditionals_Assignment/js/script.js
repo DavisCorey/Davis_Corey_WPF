@@ -38,6 +38,23 @@ oldUpgrade=oldPhone/2;  //Calc of amount of old phone value of 50% to reach upgr
 upgradeEligible=oldUpgrade-paymentsMade;  //Calc of amount needed to reach 50% for upgrade possibility
 monthlyCost=newCost/24;  //Calc of new phones cost after upgrade over 24 months (TMobile used)
 
+console.log(remainBal+" "+newCost + " "+oldUpgrade +" "+ upgradeEligible+" "+ monthlyCost);// Display of all calculations
+
 //Conditionals
+if(remainBal<=oldUpgrade&&(newPhone>1&&newCost>1)){  //Display of amount of upgrade cost outlook
+    console.log("Upgrading phones will cost "+newCost+ " or monthly for "+ Math.round(monthlyCost)+ " per month.")
+}else if(remainBal>=oldUpgrade||paymentsMade<oldUpgrade){  //Calculation of amount need for and upgrade result
+    console.log("You need to pay "+upgradeEligible+" to be eligible for an upgraded device.")
+}
 
 
+/*Test Calculation for Upgrading from Note 3 to Iphone 6
+*Current Phone 600
+* New Phone 900
+* Payments made 400
+*
+* Test Calculation for more lack of upgrade ability
+* Current Phone 600
+* New Phone 900
+* Payments made 200
+*/
