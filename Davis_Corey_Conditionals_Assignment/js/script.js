@@ -14,6 +14,9 @@ var newCost;  //store calculation of new phone cost - payments made
 var oldUpgrade;  //store calculation of 50% of old phone cost
 var upgradeEligible;  //store calculation of payment needed to reach 50% of old phone cost
 var monthlyCost;  //store remaining cost of new phone over 12 months
+var blankstring;  //ternary declaration for blank input
+var blankstring1;  //ternary declaration for empty input
+var blankstring2;  //ternary declaration for zero input
 
 //user prompts
 oldPhone=Number(prompt("Let's calculate how much it cost to upgrade to a new smartphone. \n Please input" +
@@ -22,10 +25,10 @@ newPhone=Number(prompt("How much is the new smartphone's retail cost?"));
 paymentsMade=Number(prompt("Please input the total cost of payments made for the current smartphone."));
 
 //Validate User Prompts with Ternary
-oldPhone=(oldPhone=="")? Number(prompt("We left out some information \n Can you input the cost of your" +
+blankstring=(oldPhone=="")? oldPhone=Number(prompt("We left out some information \n Can you input the cost of your" +
     " current smartphone.")):false;
-newPhone=(newPhone=="")? Number(prompt("We left out some information \n Can you input the cost of the new smartphone.")):false;
-paymentsMade=(paymentsMade=="")? Number(prompt("We left out some information \n Can you input the estimated total cost" +
+blankstring1=(newPhone=="")? newPhone=Number(prompt("We left out some information \n Can you input the cost of the new smartphone.")):false;
+blankstring2=(paymentsMade=="")? paymentsMade=Number(prompt("We left out some information \n Can you input the estimated total cost" +
     " of payments made.")):false;
 
 //Calculations
