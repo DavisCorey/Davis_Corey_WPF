@@ -51,17 +51,13 @@ while(weekProduction===""||isNAN(weekProduction)){
 }
 //Anonymous Function for initial calculation of cost for a week supply of inventory
 var startupCost;
-startupCost = function () {
-    return cost * inventory
-};
+startupCost = function (cost,inventory) {
+    var total=cost * inventory;
+    return total
+}(makeProduct,weekProduction);
 
-//Function call
-var total;
-total= startupcost(makeProduct, weekProduction); {
-    
-}
  //Display of week of production cost
-console.log("One week of manufactured products will cost"+initialCost);
+console.log("One week of manufactured products will cost"+startupCost);
 
 var totaloutput=returnedInvestment(makeProduct,sellProduct,weekProduction);
 console.log("To produce this product for "+makeProduct+" dollars and will make "+totaloutput+" dollars in profits." )
@@ -79,5 +75,5 @@ function returnedInvestment(num1,num2,num3){
 Product cost to make 7
 Product cost to sell  10
 Product manufactured per week 500
-
+Output 3500 in cost for production and 1500 in profits
  */
