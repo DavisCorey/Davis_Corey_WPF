@@ -41,12 +41,12 @@ monthlyCost=newCost/24;  //Calc of new phones cost after upgrade over 24 months 
 console.log(remainBal+" "+newCost + " "+oldUpgrade +" "+ upgradeEligible+" "+ monthlyCost);// Display of all calculations
 
 //Conditionals
+
 if(remainBal<=oldUpgrade&&(newPhone>1&&newCost>1)){  //Display of amount of upgrade cost outlook
     console.log("Upgrading phones will cost "+newCost+ " or monthly for "+ Math.round(monthlyCost)+ " per month.")
 }else if(remainBal>=oldUpgrade||paymentsMade<oldUpgrade){  //Calculation of amount need for and upgrade result
     console.log("You need to pay "+upgradeEligible+" to be eligible for an upgraded device.")
 }
-
 
 /*Test Calculation for Upgrading from Note 3 to Iphone 6
 *Current Phone 600
