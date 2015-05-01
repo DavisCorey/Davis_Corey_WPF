@@ -57,7 +57,7 @@ startupCost = function (cost,inventory) {
 }(makeProduct,weekProduction);
 
  //Display of week of production cost
-console.log("One week of manufactured products will cost"+startupCost);
+console.log("One week of manufactured products will cost "+startupCost+" dollars");
 
 var totaloutput=returnedInvestment(makeProduct,sellProduct,weekProduction);
 console.log("To produce this product for "+makeProduct+" dollars and you will make "+totaloutput+" dollars in profits." )
