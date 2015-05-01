@@ -60,7 +60,7 @@ startupCost = function (cost,inventory) {
 console.log("One week of manufactured products will cost"+startupCost);
 
 var totaloutput=returnedInvestment(makeProduct,sellProduct,weekProduction);
-console.log("To produce this product for "+makeProduct+" dollars and will make "+totaloutput+" dollars in profits." )
+console.log("To produce this product for "+makeProduct+" dollars and you will make "+totaloutput+" dollars in profits." )
 
 //Function to evaluate profits
 function returnedInvestment(num1,num2,num3){
